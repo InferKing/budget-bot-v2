@@ -17,3 +17,4 @@ class Chat(Base):
     __tablename__ = 'chat_data'
     id = Column(Integer, primary_key=True)
     
+    
