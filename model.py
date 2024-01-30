@@ -21,4 +21,4 @@ class ChatData(Base):
     message = Column(Text, nullable=False)
     created_on = Column(DateTime(), default=datetime.now)
 
-# select * from chat_data where user_id = '123';
+# select * from chat_data where user_id = '123' order by id;
