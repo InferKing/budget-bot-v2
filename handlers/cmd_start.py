@@ -4,6 +4,7 @@ from messages import MSG_START, MSG_ASSISTANT, MSG_REMIND, MSG_INPUT_FIELD
 
 router = Router()
 
+
 @router.message(CommandStart())
 async def cmd_start(message: types.Message):
     print(message.chat.id)

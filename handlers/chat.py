@@ -5,6 +5,7 @@ import g4f
 
 router = Router()
 
+
 @router.message(Command(CMD_CHAT))
 @router.message(F.text.lower() == MSG_ASSISTANT.lower())
 async def chat_gpt(message: types.Message):
